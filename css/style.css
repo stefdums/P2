@@ -1,8 +1,7 @@
 /* css pour mobile first <576px */ 
 body{
     margin:0;
-    font-family: Helvetica, sans-serif;
-    
+    font-family: Helvetica, sans-serif;    
 }
 
 main{
@@ -13,7 +12,6 @@ main{
 header h1{
     text-transform:uppercase ;
     margin:8px auto;
-    font-size:4em;
     font-weight:100;
 
 }
@@ -24,10 +22,10 @@ header span{
 }
 
 header p{
-    margin:6px auto;
+    margin:6px auto 8px auto;
     color: #404040;
-    font-size:1.8em;
     font-weight:500;
+
 
 }
 
@@ -35,8 +33,7 @@ hr{
     margin-top:-5px;
     margin-left:0;
     height: 2px;
-    /*width: 42px; /* pour changer la largeur du trait */
-    width:6vw;
+    width: 66px; /* pour changer la largeur du trait */
     background: #FECA07;
     border: none;
 }
@@ -93,7 +90,6 @@ article{
 
 .elements{
     margin:5px auto;
-    font-family: Helvetica, sans-serif;
     color:#404040;
 }
 
@@ -122,21 +118,27 @@ article{
     white-space:wrap;
     
 }
+
 .element__puce{
     padding-top: 4px;
 }
+
 .element__puce i{
     margin-top: 3px;
     color:#FECA07;  
      
 }
+
 .element__quoi{
     padding-top:2px;        
 }
+
 .element__quoi p{
     margin-top:8px;
     margin-bottom:8px;
+    line-height: 1.4;
 }
+
 h3{
     margin: 2px 0;
     text-transform: uppercase;    
@@ -154,6 +156,7 @@ h3{
     justify-content: space-around;
     
 }
+
 .recommandations__nom{
     color:#404040;
 }
@@ -179,11 +182,18 @@ aside h2{
     text-align: center;
     text-transform: uppercase;
 }
+
 .contact__div{
     display:flex;
     justify-content:space-around;
    
 }
+
+#sidebar__propos__text{
+    text-align:justify;
+
+}    
+
 #sidebar__loisirs__icones{
     font-size:50px;
     text-align:center;    
@@ -201,6 +211,7 @@ aside h2{
         border: 2px solid green;
         margin: 0 auto; 
     }
+
     header{
         margin-top:20px;
         display:flex; 
@@ -211,72 +222,88 @@ aside h2{
     header img{       
         width:100%;
         height:100%;
-
     }
 
-   
-    
+    header p{
+        font-size:1.8em;
+    }       
 }
 
 /*  css pour  Large devices >992 */
 @media screen and (min-width:934px){
-
+    
     .page{
         border: 2px solid red;
         display:flex;
         flex-direction: row-reverse;
         width: 100vw;      
     }
+
     h2{
         font-size: 1.7em;
     }
+
     aside{
         width: 29vw;
-        flex:none;    
+        flex:none;   
+        padding-top:2.5vh;
+        padding-bottom: 67px;
     }
-    aside p{
-        margin: 0 45px;
-    }
+
     #sidebar__photo{
         display: block;
         text-align:center;
+    }
 
-    }
     #sidebar__photo img{
-        width:220px;
-        height:220px;
+        width:215px;
+        height:215px;
     }
+
     aside h2{
-        margin-top: 40px;
-        padding:5px 0 10px 0;
-        
+        margin-top: 25px;
+        padding:5px 0 10px 0;    
     }
+
     .contact__div{
         display:flex;
         flex-direction: column;
         line-height: 20px;
+        margin: 0 45px;
     }
     
     #sidebar__contact p{
-        padding-top:7.5px;
-        padding-bottom:7.5px;
+        padding: 7.5px 0;
     }
+
     #sidebar__propos__text p{
         text-align:justify;
         line-height: 20px;
+        margin:0 20px;
 
     }
+
     aside div:last-child{
     
         margin-top:auto; /* pour mettre en bas */
         flex:none;
+
     }
-    /*------fin sidebar--------*/
+    #sidebar__loisirs__icones{
+        height:50px;
+        font-size:62px;
+    }
+    #sidebar__loisirs__icones i{
+        padding-top:9px;
+    }
+    /*              fin sidebar        */
+
     main{
        display:flex;
        flex-direction: column; 
        padding: 30px 19px 0 54px;
-    }    
+    } 
+
     #header__photo{
         display:none;
     }
@@ -287,29 +314,34 @@ aside h2{
         justify-content: flex-start
                
     }
+
     header h1{
         font-size:4em;
     }
+
     header p{
         font-size:1.8em;
-    }
-    
-    
+    } 
     
     /*            fin header           */
+
     .section__titre{
         padding-bottom: 10px;
     }
+
     .section__titre i{
         font-size: 2.3em;
     }
+
     .section__titre h2{
         margin-left: 33px;
         padding-bottom: 5px;
     }
+
     article{
         margin-bottom: 51px;
     }
+
     .elements{
         display:flex;
         flex-direction: column;
@@ -323,11 +355,13 @@ aside h2{
         align-items: flex-start;
         
     }
+
     .element__quoi{
         width: 65%;
         margin-left:16px;
 
     }
+
     .element__puce__ou{
         display:flex;
         flex-direction: row;
@@ -336,9 +370,11 @@ aside h2{
         margin-right:4px;
         width:25%;
     }
+
     .element__puce{
         align-self: flex-start;
     }
+
     .element__ou{
         display:flex;
         flex-direction:column;
@@ -347,9 +383,12 @@ aside h2{
 
     .recommandations__nom{
         width:50%;
-        line-height: 6px;
+        line-height: 0.5;
     }
-    
+    .recommandations__contenu{
+        padding-top:29px;
+
+    }    
 }
 
 
@@ -358,19 +397,32 @@ aside h2{
     .page{
         border: 2px solid blue;
         width:89vw;
-        margin:30px auto 0 auto;
+        margin:0 auto 0 auto;
+    }
+
+    header hr{
+        width:78px;
+    }
+    aside{
+        padding-top:7.5vh;
+    }
+    #sidebar__propos__text p{
+        margin: 0 45px;
     }
 }
 
+/* media queries pour adapter header*/
 @media screen and (max-width:1227px){
     header h1{
         font-size:3.5em ;
     }
+
 }
 @media screen and (max-width:789px){
     header h1{
     font-size:2.5em;
     }
+
 }
 @media screen and (max-width:628px){
     header h1{
@@ -379,8 +431,7 @@ aside h2{
     header p{
         font-size:1.5em;
     }
+    header hr{
+        width:64px
+    }
 }
-/* police
-
-
-*/
