@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'Helvetica-Neue-Interface';
+    src:url('fonts/Helvetica-Neue-Interface.ttf.woff') format('woff'),
+        url('fonts/Helvetica-Neue-Interface.ttf.svg#Helvetica-Neue-Interface') format('svg'),
+        url('fonts/Helvetica-Neue-Interface.ttf.eot'),
+        url('fonts/Helvetica-Neue-Interface.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 /* css pour mobile first <576px */ 
 body{
     margin:0;
-    font-family: Helvetica, sans-serif;    
+    font-family: 'Helvetica-Neue-Interface', Arial, Helvetica, sans-serif;    
 }
 
 main{
@@ -76,7 +85,6 @@ article{
 .section__titre h2{
     margin: 5px auto;
     text-align:center;
-    font-family: Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 600;    
 }
