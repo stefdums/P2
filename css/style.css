@@ -216,7 +216,6 @@ aside h2{
 /* css pour Medium devices >576 */
 @media screen and (min-width:576px){
     .page{
-        border: 2px solid green;
         margin: 0 auto; 
     }
 
@@ -241,7 +240,6 @@ aside h2{
 @media screen and (min-width:934px){
     
     .page{
-        border: 2px solid red;
         display:flex;
         flex-direction: row-reverse;
         width: 100vw;      
@@ -403,7 +401,6 @@ aside h2{
 /* css pour Extra Large device 1140 */
 @media screen and (min-width:1140px){
     .page{
-        border: 2px solid blue;
         width:89vw;
         margin:0 auto 0 auto;
     }
