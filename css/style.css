@@ -9,8 +9,10 @@
 }
 /* css pour mobile first <576px */ 
 body{
+
     margin:0;
-    font-family: 'Helvetica-Neue-Interface', Arial, Helvetica, sans-serif;    
+    font-family: 'Helvetica-Neue-Interface', Arial, sans-serif;
+    font-size: 16px;   
 }
 
 main{
@@ -19,21 +21,27 @@ main{
 
 /*  titre  */
 header h1{
+    font-size: 1.8em;
     text-transform:uppercase ;
     margin:8px auto;
-    font-weight:100;
+    color:red;
+
 
 }
 header span{
     color:#FECA07;
-    font-weight:100;
+    font-weight:bold;
     
+}
+header h1:not(span){
+    font-weight:lighter;
 }
 
 header p{
     margin:6px auto 8px auto;
     color: #404040;
-    font-weight:500;
+    font-size:1.1em;
+    
 
 
 }
@@ -203,7 +211,7 @@ aside h2{
 }    
 
 #sidebar__loisirs__icones{
-    font-size:50px;
+    font-size:3em;
     text-align:center;    
 }
 
@@ -213,7 +221,13 @@ aside h2{
 }
 /*                 Responsive            */
 
-/* css pour Medium devices >576 */
+@media screen and (min-width:473px){
+    header h1{
+        color:grey;
+        font-size:2.5em;
+    }
+}
+/* css pour Medium devices >576 BLEU*/
 @media screen and (min-width:576px){
     .page{
         margin: 0 auto; 
@@ -231,14 +245,58 @@ aside h2{
         height:100%;
     }
 
+    header h1{
+        font-size:2em;
+        color:blue;
+    }
+
     header p{
-        font-size:1.8em;
-    }       
+        font-size:1.5em;
+    }      
 }
 
-/*  css pour  Large devices >992 */
-@media screen and (min-width:934px){
+/*PURPLE*/
+@media screen and (min-width:628px){
+
+    body{
+        font-size: 14px;
+    }
+
+    header h1{
+        font-size:2.8em;
+        color:purple;
+    }
+
+    header p{
+        font-size:1.5em;
+    }
+           
+    header hr{
+        width:64px
+    }
+}
+
+/* VERT*/
+@media screen and (min-width:789px){
+    body{
+       
+    }
     
+    header h1{
+        font-size:3.5em;
+        color:green;
+    }
+    
+    header p{
+        font-size:2em;
+    }
+    
+}
+
+
+/*  css pour  Large devices >934 YELLOW*/
+@media screen and (min-width:934px){
+  
     .page{
         display:flex;
         flex-direction: row-reverse;
@@ -297,7 +355,7 @@ aside h2{
     }
     #sidebar__loisirs__icones{
         height:50px;
-        font-size:62px;
+        font-size:3em;
     }
     #sidebar__loisirs__icones i{
         padding-top:9px;
@@ -322,7 +380,8 @@ aside h2{
     }
 
     header h1{
-        font-size:4em;
+        font-size:3.5em;
+        color:yellow;
     }
 
     header p{
@@ -398,13 +457,15 @@ aside h2{
 }
 
 
-/* css pour Extra Large device 1140 */
+/* css pour Extra Large device 1140 ROSE*/
 @media screen and (min-width:1140px){
     .page{
         width:89vw;
         margin:0 auto 0 auto;
     }
-
+    header h1{
+        color:pink;
+    }
     header hr{
         width:78px;
     }
@@ -414,29 +475,17 @@ aside h2{
     #sidebar__propos__text p{
         margin: 0 45px;
     }
+    #sidebar__loisirs__icones{
+        font-size: 4em;
+    }
 }
 
-/* media queries pour adapter header*/
-@media screen and (max-width:1227px){
+/* media queries pour adapter header  YELLOW GREEN*/
+@media screen and (min-width:1227px){
+    
     header h1{
         font-size:3.5em ;
+        color:orangered;
     }
-
-}
-@media screen and (max-width:789px){
-    header h1{
-    font-size:2.5em;
-    }
-
-}
-@media screen and (max-width:628px){
-    header h1{
-        font-size:2em;
-    }
-    header p{
-        font-size:1.5em;
-    }
-    header hr{
-        width:64px
-    }
+    
 }
