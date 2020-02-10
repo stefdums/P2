@@ -102,7 +102,7 @@ section{
 }
 
 .section__articles{
-    margin:5px auto;
+    margin:5px 0;
     color:#404040;
 }
 
@@ -132,10 +132,6 @@ article{
     
 }
 
-.element__puce{
-    padding-top: 4px;
-}
-
 .element__puce i{
     margin-top: 3px;
     color:#FECA07;  
@@ -159,6 +155,7 @@ h3{
 
 .fa-circle{
     font-size:8px;
+    margin:0 4px;
 }
 
 /*      recommandations  */
@@ -284,9 +281,8 @@ aside h2{
 }
 
 
-/*  css pour  Large devices >934 */
+/*  css pour  Large devices >934  avec changement de configuration*/
 @media screen and (min-width:934px){
-  
     .page{
         display:flex;
         flex-direction: row-reverse;
@@ -298,10 +294,9 @@ aside h2{
     }
 
     aside{
+        padding-top:6vh;
         width: 29vw;
-        flex:none;   
-        padding-top:2.5vh;
-        padding-bottom: 67px;
+        flex:none;  
     }
 
     #sidebar__photo{
@@ -310,8 +305,8 @@ aside h2{
     }
 
     #sidebar__photo img{
-        width:215px;
-        height:215px;
+        width:220px;
+        height:220px;
     }
 
     aside h2{
@@ -341,10 +336,10 @@ aside h2{
     
         margin-top:auto; /* pour mettre en bas */
         flex:none;
+        padding-bottom:1vh;
 
     }
     #sidebar__loisirs__icones{
-        height:50px;
         font-size:3em;
     }
     #sidebar__loisirs__icones i{
@@ -363,10 +358,9 @@ aside h2{
     }
 
     header{
-        margin-bottom:77px;
         display:flex; 
-        justify-content: flex-start
-               
+        justify-content: flex-start;
+        margin:68px 0 77px 0;      
     }
 
     header h1{
@@ -378,6 +372,10 @@ aside h2{
     } 
     
     /*            fin header           */
+    main{
+        height:100%;
+        justify-content: space-between;
+    }
 
     .section__titre{
         padding-bottom: 10px;
@@ -427,6 +425,7 @@ aside h2{
 
     .element__puce{
         align-self: flex-start;
+        margin-top: 3px;
     }
 
     .element__ou{
@@ -456,11 +455,12 @@ aside h2{
         width:78px;
     }
     aside{
-        padding-top:7.5vh;
+        padding-top:6vh;
     }
     #sidebar__propos__text p{
         margin: 0 45px;
     }
+    
     #sidebar__loisirs__icones{
         font-size: 4em;
     }
