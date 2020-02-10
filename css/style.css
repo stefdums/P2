@@ -24,15 +24,14 @@ header h1{
     font-size: 1.8em;
     text-transform:uppercase ;
     margin:8px auto;
-    color:red;
-
-
 }
+
 header span{
     color:#FECA07;
     font-weight:bold;
     
 }
+
 header h1:not(span){
     font-weight:lighter;
 }
@@ -42,8 +41,6 @@ header p{
     color: #404040;
     font-size:1.1em;
     
-
-
 }
 
 hr{
@@ -73,12 +70,12 @@ img {
 
 /*   debut formation          */
 
-section {
+main {
     display: flex;
     flex-direction: column;
 }
 
-article{
+section{
     display:flex;
     flex-direction: column;
     margin-bottom:13px;
@@ -104,14 +101,14 @@ article{
     font-size: 1.5em;    
 }
 
-.elements{
+.section__articles{
     margin:5px auto;
     color:#404040;
 }
 
 .element__puce__ou{
     display:flex;
-    padding-bottom: 6px;
+    padding-bottom: 6px;   
     align-items:center;
     font-weight:600;    
 }
@@ -124,7 +121,7 @@ article{
     margin:5px auto 2px 14px;
 }
 
-.element{
+article{
     margin-top:25px;      
 }
 
@@ -223,11 +220,10 @@ aside h2{
 
 @media screen and (min-width:473px){
     header h1{
-        color:grey;
         font-size:2.5em;
     }
 }
-/* css pour Medium devices >576 BLEU*/
+/* css pour Medium devices >576 */
 @media screen and (min-width:576px){
     .page{
         margin: 0 auto; 
@@ -247,7 +243,6 @@ aside h2{
 
     header h1{
         font-size:2em;
-        color:blue;
     }
 
     header p{
@@ -255,16 +250,15 @@ aside h2{
     }      
 }
 
-/*PURPLE*/
+
 @media screen and (min-width:628px){
 
     body{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     header h1{
-        font-size:2.8em;
-        color:purple;
+        font-size:2.5em;
     }
 
     header p{
@@ -276,15 +270,11 @@ aside h2{
     }
 }
 
-/* VERT*/
+
 @media screen and (min-width:789px){
-    body{
-       
-    }
-    
+
     header h1{
         font-size:3.5em;
-        color:green;
     }
     
     header p{
@@ -294,7 +284,7 @@ aside h2{
 }
 
 
-/*  css pour  Large devices >934 YELLOW*/
+/*  css pour  Large devices >934 */
 @media screen and (min-width:934px){
   
     .page{
@@ -362,7 +352,7 @@ aside h2{
     }
     /*              fin sidebar        */
 
-    main{
+    #container{
        display:flex;
        flex-direction: column; 
        padding: 30px 19px 0 54px;
@@ -381,7 +371,6 @@ aside h2{
 
     header h1{
         font-size:3.5em;
-        color:yellow;
     }
 
     header p{
@@ -403,17 +392,17 @@ aside h2{
         padding-bottom: 5px;
     }
 
-    article{
+    section{
         margin-bottom: 51px;
     }
 
-    .elements{
+    .section__articles{
         display:flex;
         flex-direction: column;
         margin: auto 0;
     }
     
-    .element{
+    article{
         display: flex;
         flex-direction: row;
         justify-content:space-between;
@@ -457,14 +446,11 @@ aside h2{
 }
 
 
-/* css pour Extra Large device 1140 ROSE*/
+/* css pour Extra Large device 1140*/
 @media screen and (min-width:1140px){
     .page{
         width:89vw;
         margin:0 auto 0 auto;
-    }
-    header h1{
-        color:pink;
     }
     header hr{
         width:78px;
@@ -480,12 +466,11 @@ aside h2{
     }
 }
 
-/* media queries pour adapter header  YELLOW GREEN*/
+/* media queries pour adapter header */
 @media screen and (min-width:1227px){
     
     header h1{
         font-size:3.5em ;
-        color:orangered;
     }
     
 }
