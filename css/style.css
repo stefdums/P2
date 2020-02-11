@@ -45,7 +45,6 @@ header p{
 }
 
 hr{
-    margin-top:-5px;
     margin-left:0;
     height: 2px;
     width: 66px; /* pour changer la largeur du trait */
@@ -194,12 +193,6 @@ aside h2{
     text-transform: uppercase;
 }
 
-.contact__div{
-    display:flex;
-    justify-content:space-around;
-   
-}
-
 #sidebar__propos__text{
     text-align:justify;
 
@@ -245,6 +238,10 @@ aside h2{
 
     header p{
         font-size:1.5em;
+    }
+    .contact__div{
+        display: flex;
+        justify-content: space-around;
     }      
 }
 
@@ -316,7 +313,6 @@ aside h2{
     }
 
     .contact__div{
-        display:flex;
         flex-direction: column;
         line-height: 20px;
         margin: 0 45px;
